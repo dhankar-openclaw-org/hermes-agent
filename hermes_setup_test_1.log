@@ -1,0 +1,161 @@
+
+[0;36m⚕ SETUP--TEST---Hermes Agent Setup[0m
+
+[0;36m→[0m SETUP--TEST---Checking for uv...
+[0;32m✓[0m uv found (uv 0.7.12)
+[0;36m→[0m --SETUP--TEST-----Checking Python 3.11...
+[0;32m✓[0m Python 3.11.15 found
+[0;36m→[0m Setting up virtual environment...
+Using CPython 3.11.15
+Creating virtual environment at: venv
+Activate with: source venv/bin/activate
+[0;32m✓[0m venv created (Python 3.11)
+[0;36m→[0m Installing dependencies...
+[0;36m→[0m Using uv.lock for hash-verified installation...
+[0;36m→[0m (first run on a fresh venv can take 1-5 minutes; uv prints progress below)
+Resolved 219 packages in 382ms
+   Building hermes-agent @ file:///home/dhankar/temp/26_07__1/hermes_dir/hermes-agent
+Downloading uvloop (3.6MiB)
+Downloading cryptography (4.3MiB)
+Downloading pygments (1.2MiB)
+Downloading google-api-python-client (14.3MiB)
+Downloading pydantic-core (2.0MiB)
+Downloading openai (1.1MiB)
+Downloading aiohttp (1.7MiB)
+ Downloading openai
+ Downloading pygments
+ Downloading aiohttp
+ Downloading pydantic-core
+ Downloading uvloop
+ Downloading cryptography
+ Downloading google-api-python-client
+      Built hermes-agent @ file:///home/dhankar/temp/26_07__1/hermes_dir/hermes-agent
+Prepared 87 packages in 5.46s
+Installed 93 packages in 745ms
+ + agent-client-protocol==0.9.0
+ + aiohappyeyeballs==2.6.1
+ + aiohttp==3.13.3
+ + aiosignal==1.4.0
+ + annotated-doc==0.0.4
+ + annotated-types==0.7.0
+ + anyio==4.12.1
+ + attrs==25.4.0
+ + certifi==2026.2.25
+ + cffi==2.0.0
+ + charset-normalizer==3.4.4
+ + click==8.3.1
+ + croniter==6.0.0
+ + cryptography==46.0.7
+ + defusedxml==0.7.1
+ + distro==1.9.0
+ + fastapi==0.133.1
+ + fire==0.7.1
+ + frozenlist==1.8.0
+ + google-api-core==2.30.3
+ + google-api-python-client==2.194.0
+ + google-auth==2.49.2
+ + google-auth-httplib2==0.3.1
+ + google-auth-oauthlib==1.3.1
+ + googleapis-common-protos==1.73.0
+ + h11==0.16.0
+ + hermes-agent==0.15.1 (from file:///home/dhankar/temp/26_07__1/hermes_dir/hermes-agent)
+ + httpcore==1.0.9
+ + httplib2==0.31.2
+ + httptools==0.7.1
+ + httpx==0.28.1
+ + httpx-sse==0.4.3
+ + idna==3.15
+ + jinja2==3.1.6
+ + jiter==0.13.0
+ + jsonschema==4.26.0
+ + jsonschema-specifications==2025.9.1
+ + markdown==3.10.2
+ + markdown-it-py==4.0.0
+ + markupsafe==3.0.3
+ + mcp==1.26.0
+ + mdurl==0.1.2
+ + multidict==6.7.1
+ + oauthlib==3.3.1
+ + openai==2.24.0
+ + pathspec==1.1.1
+ + prompt-toolkit==3.0.52
+ + propcache==0.4.1
+ + proto-plus==1.27.2
+ + protobuf==6.33.5
+ + psutil==7.2.2
+ + ptyprocess==0.7.0
+ + pyasn1==0.6.3
+ + pyasn1-modules==0.4.2
+ + pycparser==3.0
+ + pydantic==2.13.4
+ + pydantic-core==2.46.4
+ + pydantic-settings==2.13.1
+ + pygments==2.19.2
+ + pyjwt==2.12.1
+ + pyparsing==3.3.2
+ + python-dateutil==2.9.0.post0
+ + python-dotenv==1.2.2
+ + python-multipart==0.0.27
+ + pytz==2025.2
+ + pyyaml==6.0.3
+ + referencing==0.37.0
+ + requests==2.33.0
+ + requests-oauthlib==2.0.0
+ + rich==14.3.3
+ + rpds-py==0.30.0
+ + ruamel-yaml==0.18.17
+ + ruamel-yaml-clib==0.2.15
+ + simple-term-menu==1.6.6
+ + six==1.17.0
+ + sniffio==1.3.1
+ + socksio==1.0.0
+ + sse-starlette==3.3.2
+ + starlette==1.0.1
+ + tenacity==9.1.4
+ + termcolor==3.3.0
+ + tqdm==4.67.3
+ + typing-extensions==4.15.0
+ + typing-inspection==0.4.2
+ + uritemplate==4.2.0
+ + urllib3==2.6.3
+ + uvicorn==0.41.0
+ + uvloop==0.22.1
+ + watchfiles==1.1.1
+ + wcwidth==0.6.0
+ + websockets==15.0.1
+ + yarl==1.22.0
+ + youtube-transcript-api==1.2.4
+[0;32m✓[0m Dependencies installed (hash-verified via uv.lock)
+[0;36m→[0m Checking ripgrep (optional, for faster search)...
+[0;32m✓[0m ripgrep found
+[0;32m✓[0m Created .env from template
+[0;36m→[0m Setting up hermes command...
+[0;32m✓[0m Symlinked hermes → ~/.local/bin/hermes
+[0;32m✓[0m ~/.local/bin already on PATH
+
+Syncing bundled skills to ~/.hermes/skills/ ...
+Syncing bundled skills into ~/.hermes/skills/ ...
+
+Done: 0 new, 0 updated, 74 unchanged. 74 total bundled.
+[0;32m✓[0m Skills synced
+
+[0;32m✓ Setup complete![0m
+
+Next steps:
+
+  1. Reload your shell:
+     source /home/dhankar/.bashrc
+
+  2. Run the setup wizard to configure API keys:
+     hermes setup
+
+  3. Start chatting:
+     hermes
+
+Other commands:
+  hermes status        # Check configuration
+  hermes gateway install # Install gateway service (messaging + cron)
+  hermes cron list     # View scheduled jobs
+  hermes doctor        # Diagnose issues
+
+Would you like to run the setup wizard now? [Y/n] 
