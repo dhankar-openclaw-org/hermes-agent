@@ -56,14 +56,14 @@ get_command_link_display_dir() {
 }
 
 echo ""
-echo -e "${CYAN}⚕ Hermes Agent Setup${NC}"
+echo -e "${CYAN}⚕ SETUP--TEST---Hermes Agent Setup${NC}"
 echo ""
 
 # ============================================================================
 # Install / locate uv
 # ============================================================================
 
-echo -e "${CYAN}→${NC} Checking for uv..."
+echo -e "${CYAN}→${NC} SETUP--TEST---Checking for uv..."
 
 UV_CMD=""
 if is_termux; then
@@ -81,7 +81,7 @@ else
         UV_VERSION=$($UV_CMD --version 2>/dev/null)
         echo -e "${GREEN}✓${NC} uv found ($UV_VERSION)"
     else
-        echo -e "${CYAN}→${NC} Installing uv..."
+        echo -e "${CYAN}→${NC} SETUP--TEST---Installing uv..."
         # Capture installer output so a failure shows the user WHY
         # (network, glibc mismatch on old distros, missing curl, disk
         # full, etc.) instead of "✗ Failed to install uv" with zero
@@ -130,7 +130,7 @@ fi
 # Python check (uv can provision it automatically)
 # ============================================================================
 
-echo -e "${CYAN}→${NC} Checking Python $PYTHON_VERSION..."
+echo -e "${CYAN}→${NC} --SETUP--TEST-----Checking Python $PYTHON_VERSION..."
 
 if is_termux; then
     if command -v python >/dev/null 2>&1; then
